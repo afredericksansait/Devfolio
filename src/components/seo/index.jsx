@@ -24,7 +24,7 @@ const SEO = ({ description, lang, meta, title, image, siteUrl}) => {
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
   const finalTitle = title ? `${title} | ${defaultTitle}` : defaultTitle;
-  const finalUrl = site.siteMetadata?.siteUrl;
+  const finalUrl = siteUrl || site.siteMetadata?.siteUrl;
   const siteImage = image || importImage;
   const finalImage = finalUrl + siteImage;
 
@@ -45,7 +45,7 @@ const SEO = ({ description, lang, meta, title, image, siteUrl}) => {
         },
         {
           property: `og:image`,
-          content: siteImage,
+          content: finalImage,
         },
         {
           property: `og:description`,
