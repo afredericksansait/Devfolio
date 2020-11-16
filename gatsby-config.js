@@ -10,7 +10,7 @@ module.exports = {
     // Description that goes under your name in main bio
     description: `Full-Stack Developer based in Iloilo, Philippines`,
     // Optional: Twitter account handle
-    // author: `@rfitzio`,
+    author: `@heyaitsa_`,
     // // Optional: Github account URL
     // github: `https://github.com/ryanfitzgerald`,
     // Optional: LinkedIn account URL
