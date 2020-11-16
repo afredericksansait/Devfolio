@@ -24,7 +24,7 @@ const SEO = ({ description, lang, meta, title, image, siteUrl}) => {
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
   const finalTitle = title ? `${title} | ${defaultTitle}` : defaultTitle;
-  const defaultImage = `${siteUrl}${image || defaultImage}`;
+  const defaultImage = `${siteUrl}${image}`;
 
   return (
     <Helmet
