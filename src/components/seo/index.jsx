@@ -39,7 +39,7 @@ const SEO = ({ description, lang, meta, title, image, siteUrl}) => {
           rel: `canonical`,
           href: finalUrl,
         }
-      ]}
+      ].concat(link)}
       meta={[
         {
           name: `description`,
@@ -85,13 +85,14 @@ const SEO = ({ description, lang, meta, title, image, siteUrl}) => {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
+  link: [],
   description: ``,
   image: null,
 };
 
 SEO.propTypes = {
   description: PropTypes.string,
-  lang: PropTypes.string,
+  lang: PropTypes.arrayOf(PropTypes.object),
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string,
   image: PropTypes.string,
