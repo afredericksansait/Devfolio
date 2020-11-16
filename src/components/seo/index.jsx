@@ -25,7 +25,8 @@ const SEO = ({ description, lang, meta, title, image, siteUrl}) => {
   const defaultTitle = site.siteMetadata?.title;
   const finalTitle = title ? `${title} | ${defaultTitle}` : defaultTitle;
   const finalUrl = site.siteMetadata?.siteUrl;
-  const finalImage = site.siteMetadata?.image;
+  const defaultImage = site.siteMetadata?.image;
+  const finalImage = finalUrl + defaultImage;
 
   return (
     <Helmet
@@ -40,10 +41,6 @@ const SEO = ({ description, lang, meta, title, image, siteUrl}) => {
         },
         {
           property: `og:image`,
-          content: finalUrl,
-        },
-        {
-          property: `og:test`,
           content: finalImage,
         },
         {
