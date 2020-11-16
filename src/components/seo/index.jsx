@@ -34,6 +34,12 @@ const SEO = ({ description, lang, meta, title, image, siteUrl}) => {
         lang,
       }}
       title={finalTitle}
+      link={[
+        {
+          rel: `canonical`,
+          href: finalUrl,
+        }
+      ]}
       meta={[
         {
           name: `description`,
