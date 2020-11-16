@@ -29,14 +29,11 @@ const SEO = ({ description, lang, meta, title}) => {
         lang,
       }}
       title={finalTitle}
+      meta property="og:image" content={defaultImage}
       meta={[
         {
           name: `description`,
           content: metaDescription,
-        },
-        {
-          property: `og:image`,
-          content: defaultImage,
         },
         {
           property: `og:title`,
