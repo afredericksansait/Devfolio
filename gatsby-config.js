@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     // Site URL for when it goes live
     siteUrl: `https://www.afredericksansait.com/`,
+    image: 'src/images/social.jpg',
     // Your Name
     name: 'A. Frederick Sansait',
     // Main Site Title
