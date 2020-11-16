@@ -2,8 +2,9 @@ import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
+import defaultImage from '../../images/social.jpg';
 
-const SEO = ({ description, lang, meta, title, image }) => {
+const SEO = ({ description, lang, meta, title}) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -12,7 +13,6 @@ const SEO = ({ description, lang, meta, title, image }) => {
             title
             description
             author
-            image
           }
         }
       }
@@ -22,7 +22,6 @@ const SEO = ({ description, lang, meta, title, image }) => {
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
   const finalTitle = title ? `${title} | ${defaultTitle}` : defaultTitle;
-  const defaultImage = site.siteMetadata?.image;
 
   return (
     <Helmet
@@ -76,7 +75,6 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-  image: null,
 };
 
 SEO.propTypes = {
@@ -84,7 +82,6 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string,
-  image: PropTypes.string,
 };
 
 export default SEO;
