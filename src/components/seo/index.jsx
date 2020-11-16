@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 //import defaultImage from '../../images/social.jpg';
 
-const SEO = ({ description, lang, meta, title, image}) => {
+const SEO = ({ description, lang, meta, title, image, siteUrl}) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -14,6 +14,7 @@ const SEO = ({ description, lang, meta, title, image}) => {
             description
             author
             image
+            siteUrl
           }
         }
       }
