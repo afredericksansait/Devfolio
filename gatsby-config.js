@@ -15,7 +15,7 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/afredericksansait/`,
     // Content of the About Me section
-    about: `Hey, it's A (my first name is literally the letter A)! I currently work in helping develop campus esports in the region that makes esports relevant to the student lifestyle, and drive support for the collegiate scene across the country. I also moonlight as a web/software developer; combined, I've gained skills in web design, software engineering, event marketing.`,
+    about: `Hey, it's (literally the letter) A!`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
