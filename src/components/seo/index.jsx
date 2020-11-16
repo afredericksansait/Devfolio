@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-//import defaultImage from '../../images/social.jpg';
+import importImage from '../../images/social.jpg';
 
 const SEO = ({ description, lang, meta, title, image, siteUrl}) => {
   const { site } = useStaticQuery(
@@ -41,7 +41,7 @@ const SEO = ({ description, lang, meta, title, image, siteUrl}) => {
         },
         {
           property: `og:image`,
-          content: finalImage,
+          content: importImage,
         },
         {
           property: `og:title`,
