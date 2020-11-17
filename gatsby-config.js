@@ -16,7 +16,7 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/afredericksansait/`,
     // Optional: Email
-    email: `mailto:afredericksansait@gmail.com`,
+    email: `mailto:contact@afredericksansait.com`,
     // Content of the About Me section
     about: `Hey, it's (literally the letter) A!`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
