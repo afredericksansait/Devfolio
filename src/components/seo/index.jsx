@@ -62,6 +62,10 @@ const SEO = ({ description, lang, meta, title, link, image, siteUrl}) => {
           content: `website`,
         },
         {
+          name: 'og:email',
+          content: 'contact@afredericksansait.com',
+        },
+        {
           property: `twitter:card`,
           content: `summary`,
         },
